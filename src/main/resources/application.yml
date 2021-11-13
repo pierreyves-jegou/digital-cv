@@ -5,3 +5,5 @@ quarkus:
   mongodb:
     connection-string: mongodb://localhost:27017
     database: digitalcv
+  package:
+    uber-jar: true
