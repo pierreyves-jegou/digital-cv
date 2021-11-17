@@ -23,7 +23,7 @@ public class CvResourceImperative {
     @ConfigProperty(name = "greeting.name")
     Optional<String> name;
 
-    @ConfigProperty(name = "greeting.essai", , defaultValue = "undef")
+    @ConfigProperty(name = "greeting.essai", defaultValue = "undef")
     String varia;
     
     @Inject
