@@ -23,6 +23,9 @@ public class CvResourceImperative {
     @ConfigProperty(name = "greeting.name")
     Optional<String> name;
 
+    @ConfigProperty(name = "greeting.essai", , defaultValue = "undef")
+    String varia;
+    
     @Inject
     CvServiceImperative cvServiceImperative;
 
@@ -32,7 +35,7 @@ public class CvResourceImperative {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return message + " " + name.orElse("world") + suffix;
+        return message + " " + name.orElse("world") + suffix + varia;
     }
 
     @PUT
