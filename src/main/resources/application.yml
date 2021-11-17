@@ -1,6 +1,7 @@
 greeting:
   message: "hello"
   name: "quarkus"
+  essai: ${MY_ENV_VAR} 
 quarkus:
   mongodb:
     connection-string: mongodb://localhost:27017
