@@ -6,6 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                mvn clean compile
             }
         }
         stage('Test') {
