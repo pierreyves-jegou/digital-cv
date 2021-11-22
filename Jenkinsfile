@@ -8,7 +8,7 @@ pipeline {
       stage('Build') {
          steps {
             echo 'test'
-            sh 'mvn clean compile'
+            mvn clean compile
          }
       }
       stage('Test') {
