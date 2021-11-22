@@ -8,6 +8,7 @@ pipeline {
       stage('Build') {
          steps {
             echo 'test'
+            maven clean compile
             mvn clean compile
          }
       }
